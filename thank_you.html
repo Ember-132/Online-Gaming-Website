@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- meta tags -->
+    <title>Online Gaming</title>
+    <meta name="title" content="Online Gaming">
+    <meta name="description" content="Page confirming contact form submission ">
+    <meta name="keywords" content="help, submitted, form, contact">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/jpg">
+    
+    <!-- imported font -->
+    <link href="https://fonts.cdnfonts.com/css/jobless" rel="stylesheet">
+         
+    <!-- imported font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baumans&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+   
+    <!-- my CSS link -->
+     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="padded_container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.jpg" alt="online gaming home">
+            </a>
+            <h1 class="title">Online Gaming</h1>
+
+            <!-- Navigation Bar -->
+            <nav class="mobile_menu"></nav>
+            <nav class="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item" id="first_item"><a href="index.html" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Games</a>
+                        <ul>
+                            <li class="nav_item tier2"><a href="all_games.html" class="nav_link">All Games</a></li>
+                            <li class="nav_item"><a href="deals.html" class="nav_link">Deals &amp; Discounts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_item"><a href="#" class="nav_link">Updates</a>
+                        <ul>
+                            <li class="nav_item"><a href="daily_news.html" class="nav_link">Daily News &amp; Events</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li class="nav_item"><a href="#" class="nav_link">Membership</a>
+                        <ul>
+                            <li class="nav_item"><a href="become_member.html" class="nav_link">Become a Member</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_item"><a href="#" class="nav_link">About</a>
+                        <ul>
+                            <li class="nav_item"><a href="team.html" class="nav_link">Meet the Team</a></li>
+                            <li class="nav_item"><a href="achievements.html" class="nav_link">Achievements &amp; Expansion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_item" id="last_item"><a href="contact.html" id="current" class="nav_link">Contact Us</a>
+                        
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+<!-- Main -->
+
+    <main class="main">
+        <div class="padded_container ">
+            <div class="main_title_container">
+                <div class="subtext" id="thanks_message">
+                    <img src="assets/images/star_icon.png" alt="star icon" width="28em">
+                    <img src="assets/images/star_icon.png" alt="star icon" width="40em">
+                    <img src="assets/images/star_icon.png" alt="star icon" width="60em">
+                    <h2>Thank you.<br><br>A member of the team will be in touch with you soon.</h2>
+                    <img src="assets/images/star_icon.png" alt="star icon" width="60em">
+                    <img src="assets/images/star_icon.png" alt="star icon" width="40em">
+                    <img src="assets/images/star_icon.png" alt="star icon" width="28em">  
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="padded_container footer_container">
+            <div class="footer_link_container">
+                <ul>
+                    <li class="footer_links"><a href="#" class="footer_link">Privacy Policy</a></li>
+                
+                    <li class="footer_links"><a href="#" class="footer_link">Terms of Service</a></li>
+                
+                    <li class="footer_links"><a href="#" class="footer_link">Cookie Policy</a></li>
+                
+                    <li class="footer_links" id="last_link"><a href="#" class="footer_link">Support</a></li>
+                
+                </ul>
+            </div>
+            <p class="footer_text">&copy; 2025 Online Gaming. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    
+<!-- Javascript/jQuery -->
+
+<!-- Reference to Jquery plugin -->
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<!-- SlickNav style sheet -->
+<link href="SlickNav/SlickNav-master/dist/slicknav.css" rel="stylesheet" >
+<!-- SlickNav JavaScript -->
+<script src="SlickNav/SlickNav-master/dist/jquery.slicknav.js"></script>
+<!-- SlickNav JavaScript -->
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('.nav_menu').slicknav({prependTo:".mobile_menu"});
+    });
+    </script>
+<!-- my JavaScript script -->
+<script src="assets/js/script.js"></script>
+</body>
+</html>

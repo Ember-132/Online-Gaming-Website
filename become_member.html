@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- meta tags -->
+    <title>Online Gaming</title>
+    <meta name="title" content="Online Gaming">
+    <meta name="description" content="A form to fill and submit to apply for an Online Gaming membership">
+    <meta name="keywords" content="member, membership, exclusive, club, gaming, online, games">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/jpg">
+    
+    <!-- imported font -->
+    <link href="https://fonts.cdnfonts.com/css/jobless" rel="stylesheet">
+         
+    <!-- imported font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baumans&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+   
+    <!-- my CSS link -->
+     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="padded_container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.jpg" alt="online gaming home">
+            </a>
+            <h1 class="title">Online Gaming</h1>
+
+            <!-- Navigation Bar -->
+            <nav class="mobile_menu"></nav>
+            <nav class="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item" id="first_item"><a href="index.html" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Games</a>
+                        <ul>
+                            <li class="nav_item tier2"><a href="all_games.html" class="nav_link">All Games</a></li>
+                            <li class="nav_item"><a href="deals.html" class="nav_link">Deals &amp; Discounts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_item"><a href="#" class="nav_link">Updates</a>
+                        <ul>
+                            <li class="nav_item"><a href="daily_news.html" class="nav_link">Daily News &amp; Events</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li class="nav_item"><a href="#" class="nav_link" id="current" >Membership</a>
+                        <ul>
+                            <li class="nav_item"><a href="become_member.html" class="nav_link">Become a Member</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_item"><a href="#" class="nav_link">About</a>
+                        <ul>
+                            <li class="nav_item"><a href="team.html" class="nav_link">Meet the Team</a></li>
+                            <li class="nav_item"><a href="achievements.html" class="nav_link">Achievements &amp; Expansion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_item" id="last_item"><a href="contact.html" class="nav_link">Contact Us</a>
+                        
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+<!-- Main -->
+
+    <main class="main">
+
+        <div class="main_title_container">
+            <div class="subtext h2_title">
+                <img src="assets/images/star_icon.png" alt="star icon" width="28em">
+                <img src="assets/images/star_icon.png" alt="star icon" width="40em">
+                <img src="assets/images/star_icon.png" alt="star icon" width="60em">
+                <h2>Membership Form</h2>
+                <img src="assets/images/star_icon.png" alt="star icon" width="60em">
+                <img src="assets/images/star_icon.png" alt="star icon" width="40em">
+                <img src="assets/images/star_icon.png" alt="star icon" width="28em">  
+            </div>
+        </div>
+        <div class="primary_container">
+            <div class="column_container">
+
+                <div class="b_margin short_text">
+                    <p>Become a Online Gaming Member today and be rewarded with exclusive offers and discounts.</p>
+                </div>
+
+                <form action="submit.php" method="post" id="member_form">
+                    <fieldset>
+                        <legend>User Information</legend>
+                        <div>
+                            <label for="first_name">First Name:</label>
+                            <input type="text" name="first_name" id="first_name" autofocus>
+                            <span>*</span>
+                        </div>
+                        <div>
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" name="last_name" id="last_name">
+                            <span>*</span>
+                        </div>
+                        <div>
+                            <label for="email">Email Address:</label>
+                            <input type="text" name="email" id="email" autofocus>
+                            <span>*</span>
+                        </div>
+                        <div>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password" placeholder="At least 6 characters">
+                            <span>*</span>
+                        </div>
+                        <div>
+                            <label for="verify">Verify Password:</label>
+                            <input type="password" name="verify" id="verify">
+                            <span>*</span>
+                        </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                        <div>
+                                <label for="contact_method">Contact Me By:</label>
+                                <!-- <br> -->
+                                <div class="wrap_container">
+                                    <div class="wrap">
+                                        <input type="radio" name="radio" id="radio1" value="text" class="radio" checked><span class="indent">Text</span>
+                                        <input type="radio" name="radio" id="radio2" value="email" class="radio"><span class="indent">Email</span>
+                                    </div>
+                                    <div class="wrap">
+                                        <input type="radio" name="radio" id="radio3" value="post" class="radio"><span class="indent">Post</span>
+                                        <input type="radio" name="radio" id="radio4" value="none" class="radio"><span class="indent">Don't Contact</span>
+                                    </div>
+                                </div>
+                                <br>
+                            <div class="phone_control">
+                                <label for="phone">Phone Number:</label>
+                                <input type="text" name="phone" id="phone">
+                                <span>*</span>
+                            </div>
+                        </div>
+                
+                        <div class="address_control">
+                            <div>
+                                <label for="address1">Address Line 1:</label>
+                                <input type="text" id="address1" name="address1">
+                                <span>*</span>
+                            </div>
+                            <div>
+                                <label for="address2">Address Line 2</label>
+                                <input type="text" id="address2" name="address2">
+                                
+                            </div>
+                            <div>
+                                <label for="city">City:</label>
+                                <input type="text" id="city" name="city">
+                                <span>*</span>
+                            </div>
+                            <div>
+                                <label for="state">State/Province:</label>
+                                <input type="text" id="state" name="state">
+                                <span>*</span>
+                            </div>
+                            <div>
+                                <label for="zip">ZIP/Postal Code:</label>
+                                <input type="text" id="zip" name="zip">
+                                <span>*</span>
+                            </div>
+                            <div class="country_control">
+                                <label for="select">Country:</label>
+                                    <select id="select" name="select" class="right">
+                                        <option value="">Select a Country</option>
+                                        <option value="UK">United Kingdom</option>
+                                        <option value="USA">United States</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Spain">Spain</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="Germany">Germany</option>
+                                        <option value="France">France</option>
+                                        <option value="India">India</option>
+                                        <option value="Japan">Japan</option>
+                                        <option value="Russia">Russia</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="South Africa">South Africa</option>
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="China">China</option>
+                                        <option value="Italy">Italy</option>
+                                    </select>
+                                <span>*</span>
+                            </div>
+                        </div>
+                        
+                        
+                    </fieldset>
+                    <fieldset id="last_fieldset">
+                        <legend>Confirm your Membership</legend>
+                        <div>
+                            <label for="comments">Comments:</label>
+                            <textarea id="comments"></textarea>
+                        </div>
+                        <div>
+                            <label for="checkbox">Terms of service:</label>
+                            <input type="checkbox" id="checkbox" value="yes"><span class="indent">I accept</span>
+                            <span>*</span>
+                            <br><br>
+                        </div>
+                        <div id="buttons">
+                            <input type="submit" id="submit" value="Sign Up">
+                            <input type="reset" id="reset" value="Reset Form">
+                        </div>
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+
+<!-- Footer -->
+
+
+
+
+<footer class="footer">
+    <div class="padded_container footer_container">
+        <div class="footer_link_container">
+            <ul>
+                <li class="footer_links"><a href="#" class="footer_link">Privacy Policy</a></li>
+            
+                <li class="footer_links"><a href="#" class="footer_link">Terms of Service</a></li>
+            
+                <li class="footer_links"><a href="#" class="footer_link">Cookie Policy</a></li>
+            
+                <li class="footer_links" id="last_link"><a href="#" class="footer_link">Support</a></li>
+            
+            </ul>
+        </div>
+        <p class="footer_text">&copy; 2025 Online Gaming. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Javascript/jQuery -->
+
+<!-- Reference to Jquery plugin -->
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<!-- SlickNav style sheet -->
+<link href="SlickNav/SlickNav-master/dist/slicknav.css" rel="stylesheet" >
+<!-- SlickNav JavaScript -->
+<script src="SlickNav/SlickNav-master/dist/jquery.slicknav.js"></script>
+<!-- SlickNav JavaScript -->
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('.nav_menu').slicknav({prependTo:".mobile_menu"});
+    });
+    </script>
+<!-- my JavaScript script -->
+<script src="assets/js/script.js"></script>
+</body>
+</html>
