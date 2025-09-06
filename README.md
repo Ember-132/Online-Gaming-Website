@@ -1,4 +1,4 @@
-# My Gaming Website 🎮
+# My Online Gaming Website 🎮
 
 A responsive website built for my university project, showcasing available games, interactive features, and company events/information.
 
