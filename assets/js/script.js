@@ -169,13 +169,13 @@ $(document).ready(() => {
             $("#checkbox").next().next().text("Please confirm you accept the terms of service");
             isValid = false;
         } else {
-            $("#checkbox").next().text("");
+            $("#checkbox").next().next().text("");
             
         }
                 
-        
-        if (isValid == false){
-            event.preventDefault();
+        event.preventDefault();
+        if (isValid){
+            window.location.replace("thank_you.html");
         }
     })
 
